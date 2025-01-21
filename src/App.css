@@ -1,0 +1,30 @@
+.nftBox {
+  border: 2px solid lightgray;
+  margin: 5px;
+  position: relative;
+  width: min-content;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nftBox:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.nftBoxInner {
+  margin: 8px;
+}
+
+.nftGrid {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.content {
+  margin-top: 100px;
+}
