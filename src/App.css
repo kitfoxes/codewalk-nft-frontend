@@ -1,3 +1,7 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
 .nftBox {
   border: 2px solid lightgray;
   margin: 5px;
@@ -9,7 +13,7 @@
 }
 
 .nftBox:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }

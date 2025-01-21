@@ -6,7 +6,7 @@ import { Box, Button } from "@radix-ui/themes";
 
 const ProtectedRoute = ({ children, activePage }) => {
   const { account, connectWallet } = useAuth();
-  console.log(account)
+  console.log(" Protected ", account);
 
   if (!account) {
     return (
@@ -14,7 +14,7 @@ const ProtectedRoute = ({ children, activePage }) => {
         <Navbar activePage={activePage} />
 
         <div className="content">
-          <Box style={{ textAlign: "center"}} width={"auto"}>
+          <Box style={{ textAlign: "center" }} width={"auto"}>
             <h2>Please connect your wallet to continue</h2>
             <Button onClick={connectWallet}>Connect MetaMask</Button>
           </Box>

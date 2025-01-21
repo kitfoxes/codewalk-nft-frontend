@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { Box, Em, Flex, Skeleton, Text } from "@radix-ui/themes";
+import { Box, Em, Flex, ScrollArea, Skeleton, Text } from "@radix-ui/themes";
 import Image from "../components/Image";
 
 const allNFTS = [
@@ -106,7 +106,7 @@ function Marketplace() {
   return (
     <>
       <Navbar activePage={0} />
-      <div className="content">
+      <div className="content no-scrollbar">
         <div className="nftGrid">
           {allNFTS.map((nft) => (
             <Box key={nft.creator} className="nftBox">
